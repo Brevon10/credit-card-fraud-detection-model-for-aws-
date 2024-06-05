@@ -6,3 +6,4 @@ Dataset should be downloaded from kaggkle 150 mb file and and retrieve it on the
 Start the service Aws Lambda as it is serverless and connect it to API gateway of  the service . 
 Connect the service AWS Kinesis data firehose to aws lambda and the results shall e displayed on AWS S3 Bucket.
 Ignore the error its due o the one of the service fraud detector as it is paid . and don't forget to install  the packages.
+for full projrct mail me details.
