@@ -1,6 +1,6 @@
 pandas
 boto3
-altair<5
+altair<4
 numpy
 sklearn
 pickle
