@@ -12,3 +12,4 @@ logging
 sys
 argparse
 json
+seaborn 
