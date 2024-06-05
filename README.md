@@ -7,3 +7,12 @@ Start the service Aws Lambda as it is serverless and connect it to API gateway o
 Connect the service AWS Kinesis data firehose to aws lambda and the results shall e displayed on AWS S3 Bucket.
 Ignore the error its due o the one of the service fraud detector as it is paid . and don't forget to install  the packages.
 for full projrct mail me details.
+
+
+
+###########################################################################################################
+unsupervised learning model with Amazon SageMaker Random Cut Forest
+data upsampling techniques like SMOTE for addressing imbalanced data
+More interpretation of results
+supervised learning model with XGBoost
+Amazon API Gateway entrypoint
