@@ -1,0 +1,18 @@
+deployment/
+fraud-detection-using-machine-learning.yaml: Creates AWS CloudFormation Stack for solution
+source/
+lambda
+model-invocation/
+index.py: Lambda function script for invoking SageMaker endpoints for inference
+notebooks/
+src
+package
+config.py: Read in the environment variables set during the Amazon CloudFormation stack creation
+generate_endpoint_traffic.py: Custom script to show how to send transaction traffic to REST API for inference
+util.py: Helper function and utilities
+sagemaker_fraud_detection.ipynb: Orchestrates the solution. Trains the models and deploys the trained model
+endpoint_demo.ipynb: A small notebook that demonstrates how one can use the solution's endpoint to make prediction.
+scripts/
+set_kernelspec.py: Used to update the kernelspec name at deployment.
+test/
+Files that are used to automatically test the solution
