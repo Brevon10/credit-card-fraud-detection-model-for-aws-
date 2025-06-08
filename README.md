@@ -16,9 +16,7 @@ Data Ingestion: Uses Amazon Kinesis Data Firehose to stream results to Amazon S3
 Fraud Detector Service: Optionally integrates with AWS Fraud Detector (note: this is a paid service).
 
 🧱 Architecture
-yaml
-Copy
-Edit
+
 Kaggle Dataset
      |
      v
@@ -49,17 +47,14 @@ Python environment (with boto3, pandas, numpy, scikit-learn, imbalanced-learn)
 1. Download Dataset
 Download a ~150MB fraud detection dataset from Kaggle and upload it to an S3 bucket.
 
-bash
-Copy
-Edit
+
 # Sample command to upload dataset
 aws s3 cp fraud_dataset.csv s3://your-bucket-name/datasets/
+
 2. Create S3 Bucket
-bash
-Copy
-Edit
 aws s3 mb s3://your-bucket-name
-3. Train Model on SageMaker
+
+4. Train Model on SageMaker
 You can:
 
 Use SageMaker Canvas or Studio for prebuilt models
@@ -80,9 +75,7 @@ Streams results to Kinesis
 
 Install required packages:
 
-bash
-Copy
-Edit
+
 pip install boto3 pandas scikit-learn imbalanced-learn
 6. Connect Lambda to API Gateway
 Set up a REST API using API Gateway as a trigger for the Lambda function.
@@ -95,9 +88,7 @@ Set the destination to your S3 bucket.
 8. Connect Firehose to Lambda
 In your Lambda function, publish results to Firehose:
 
-python
-Copy
-Edit
+
 import boto3
 firehose = boto3.client('firehose')
 firehose.put_record(
